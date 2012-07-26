@@ -1,0 +1,23 @@
+Global Resources/Classes
+  Interactors
+  Entities
+  Repository
+  Notifier
+  Messages
+
+Use Cases
+  Static Text
+    ConfigStaticText   [<name> <citation>]
+    LookupStaticText   <name>
+
+  User
+    Signup             <email> <password>
+    VerifyNotification <email>
+    Verification       <verification-code>
+    ChangeNotification <email>
+    ChangePassword     <change-password-code> <password>
+    Login              <email> <password> <isPersistent>
+    Logout
+    CurrentUser
+
+

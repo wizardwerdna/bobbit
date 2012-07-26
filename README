@@ -1,0 +1,9 @@
+First unspike attempt to implement a web application further to Uncle Bob's admonitions to approach web design from a DDD-style posture.  
+I acknowledge and draw inspiration from two particular experiments in this area, and will draw from their approaches.
+
+Here, I will not undertake to develop a framework for building an application, but rather will simply build an app to shed light what might best be etracted to support future works.
+
+First Phase
+===========
+Plan for this phase is to implement the interactors, and then attempt to assemble a rudimentary web app based on them, at first
+using a memory-based store.  Next phase will implement a database-backed store.
