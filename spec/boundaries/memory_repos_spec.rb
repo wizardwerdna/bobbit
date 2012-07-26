@@ -1,6 +1,6 @@
-require_relative '../src/entities'
-require_relative '../src/memory_repos'
-require_relative '../src/interfaces/indexed_repository_interface.rb'
+require_relative '../../entities/entities'
+require_relative '../../boundaries/memory_repos'
+require_relative '../../boundaries/indexed_repository_interface.rb'
 describe MemoryRepos do
 
   context MemoryRepos::IndexedRepo do

@@ -1,4 +1,4 @@
-require_relative '../src/repository'
+require_relative '../../boundaries/repository'
 
 describe Repository do
   

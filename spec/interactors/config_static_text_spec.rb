@@ -1,6 +1,6 @@
-require 'ostruct'
-require_relative '../src/interfaces/interactor_interface'
-require_relative '../src/config_static_text'
+require_relative '../../entities/entities'
+require_relative '../../boundaries/interactor_interface'
+require_relative '../../interactors/config_static_text'
 
 describe ConfigStaticText do
 
