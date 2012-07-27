@@ -1,4 +1,4 @@
 require 'ostruct'
 class Entity < OpenStruct; end
 
-class Static < Entity; end
+class Page < OpenStruct; end

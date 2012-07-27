@@ -60,7 +60,7 @@ class MemoryRepos
 
   end
 
-  class StaticRepo < IndexedRepo
+  class PageRepo < IndexedRepo
 
     alias :fetch_by_name :fetch
     alias :delete_by_name :delete

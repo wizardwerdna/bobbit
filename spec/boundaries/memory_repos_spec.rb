@@ -14,9 +14,9 @@ describe MemoryRepos do
     end
   end
 
-  context MemoryRepos::StaticRepo do
-    let(:repo) {MemoryRepos::StaticRepo.new}
-    let(:data) {Static.new(name: 1)}
+  context MemoryRepos::PageRepo do
+    let(:repo) {MemoryRepos::PageRepo.new}
+    let(:data) {Page.new(name: 1)}
 
     it_should_behave_like "an indexed repository"
 
