@@ -1,4 +1,4 @@
-require_relative '../../boundaries/interactor_interface'
+require_relative '../boundaries/interactor_interface'
 require_relative '../../boundaries/repository'
 require_relative '../../interactors/pages'
 

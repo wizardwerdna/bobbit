@@ -8,7 +8,11 @@ class Interactor
   end
 
   def execute
-    raise "abstract class should not be executed"
+    raise "abstract class instance should not be executed"
   end
+  
+private
+
+  attr_reader :r
 
 end

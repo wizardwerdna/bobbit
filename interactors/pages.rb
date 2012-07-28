@@ -1,3 +1,4 @@
+require_relative '../entities'
 require_relative '../lib/interactor.rb'
 module Pages
 

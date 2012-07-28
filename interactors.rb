@@ -1,0 +1,1 @@
+require_relative 'interactors/pages.rb'
