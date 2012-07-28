@@ -1,9 +1,21 @@
-First unspike attempt to implement a web application further to Uncle Bob's admonitions to approach web design from a DDD-style posture.  
-I acknowledge and draw inspiration from two particular experiments in this area, and will draw from their approaches.
+First unspiked attempt to implement a web application further to Uncle Bob's admonitions to approach web design from a DDD-style posture.  
+I acknowledge and draw inspiration from two particular experiments in this area:
 
-Here, I will not undertake to develop a framework for building an application, but rather will simply build an app to shed light what might best be etracted to support future works.
+  Jason Roelofs' Raidit (https://github.com/jasonroelofs/raidit)
+  
+    Raidit is a reasonably complex application built within a rails app, adding an interactors folder and placing entities in
+    the Rails model directory.  Entities are built out in some cases as ActiveModel objects.
+    
+  Piotr 'Qertoip' Włodarek (https://github.com/qertoip/guru_watch)
+  
+    The application is more modest than Raidit, but the extraction from rails is a tour de force.  He uses UseCases in lieu of
+    Interactors, and some other terminology, but the application builds nicely in rails and runs in memory as well.  He retains
+    ActiveSupport (I approve) and also uses ActiveModel (actually ActiveAttr) in his mainline.  Also expressly separates pieces of
+    rails, using ActiveRecord on the repository side, and ActionPack on the "Web" side.  He seems to be building up a more elaborate
+    persistence framework akin to a full DDD repository.
 
-First Phase
-===========
-Plan for this phase is to implement the interactors, and then attempt to assemble a rudimentary web app based on them, at first
-using a memory-based store.  Next phase will implement a database-backed store.
+Here, I will not undertake to develop a framework for building an application, but rather will simply build an app to shed light on what might best be extracted to support future works.  I will try to build with various web tools, including a raw rack app, Sinatra app and Rails.  I'll also try a memory, raw Postgres SQL, ActiveRecord and NoSql repository.
+
+If this goes well, I'll try to extract a model, and perhaps to a few screencasts to show its construction.  Please, please, please, communicate if you are interested in this approach -- its time we started organizing our thoughts to see if this makes any sense at all.  I'm emotionally committed to this approach as, at least in Greenfield, the initial app development (and TDD!) goes SOOOOO smoothly.
+
+Andrew Greenberg (wizardwerdna@gmail.com)

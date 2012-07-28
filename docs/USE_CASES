@@ -1,23 +1,32 @@
-Global Resources/Classes
+Shorthand docs.
+
+Global Resources/Classes/Boundry Stuff/Etc.
   Interactors
   Entities
+    Page
+    User
   Repository
   Notifier
   Messages
+  Request
+  Response
 
-Use Cases
-  Static Text
-    ConfigStaticText   [<name> <citation>]
-    LookupStaticText   <name>
+Use Cases (Interactors instantiated as shown below, and run with #execute)
 
-  User
-    Signup             <email> <password>
-    VerifyNotification <email>
-    Verification       <verification-code>
-    ChangeNotification <email>
-    ChangePassword     <change-password-code> <password>
-    Login              <email> <password> <isPersistent>
-    Logout
-    CurrentUser
+  Pages [Page entities comprise <page name> and <page locator>]
+    Pages::All.new                                    => Response.new(pages: [array of pages])
+    Pages::Set.new(name: name, locator: location)     => NoResponse
+    Pages::Get.new(name: name)                        => Response.new(page: <page corresponding to name>)
+
+  User [User entities comprise <email> and <password>]
+    Signup.new(email: email, password, password)      => Response.new(user: <user>, errors: <error-object>)
+    VerifyNotification.new(email: email)              => NoResponse
+    Verification.new(token: token)                    => Response.new(errors: <error-object>)
+    ChangeNotification.new(email: str)                => NoResponse
+    ChangePassword(email: email, password: password)  => Response.new(user: <user>, errors: <error-object>)
+    Login(email: email, password: password, persistent: persistent)
+                                                      => Response.new(user: <user>, errors: <error-object>)
+    Logout                                            => NoResponse
+    CurrentUser                                       => Response.new(user: <user>)
 
 
