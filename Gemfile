@@ -14,5 +14,6 @@ group :assets do
 end
 gem 'jquery-rails'
 
+gem 'cucumber'
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
