@@ -6,7 +6,6 @@ gem 'sinatra'
 # from rails Gemfile
 #
 gem 'rails', '3.2.6'
-gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
